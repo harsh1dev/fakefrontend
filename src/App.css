@@ -1,0 +1,15 @@
+.main {
+  margin: 40px;
+}
+
+.textarea-input {
+  width: 30rem;
+  margin: 0px 5rem;
+
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
