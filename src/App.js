@@ -19,7 +19,7 @@ function Home() {
   const [urlName, setUrlName] = useState('');
 
   const handleSubit = async () => {
-    const response = await fetch('http://localhost:8000/data', {
+    const response = await fetch('https://fakeserver-aq7x.onrender.com/data', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function Home() {
           <Button type="primary" onClick={handleSubit}>Submit</Button>
         </Flex>
         <br /><br />
-        {urlName && <div>Your URL is: <a href={`http://localhost:8000/url/${urlName}`}>{`http://localhost:8000/url/${urlName}`}</a></div>}
+        {urlName && <div>Your URL is: <a href={`https://fakeserver-aq7x.onrender.com/url/${urlName}`}>{`https://fakeserver-aq7x.onrender.com/url/${urlName}`}</a></div>}
       </div>
     </div>
 
